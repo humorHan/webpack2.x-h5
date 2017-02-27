@@ -104,7 +104,7 @@ module.exports = function (isWatch, isDev) {
                     loader: 'babel-loader',
                     exclude: node_modules
                 }, {
-                    test: /\.html$/,
+                    test: /\.(html|php)$/,
                     include: [
                         path.join(__dirname, 'src')
                     ],
