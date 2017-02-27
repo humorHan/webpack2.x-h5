@@ -1,0 +1,267 @@
+@import "./common/common.css";
+@import "./common/swiper-3.3.1.min.css";
+@import "./common/animate.css";
+
+#pages {
+    width: 100%;
+    height: 100%;
+}
+
+#page-1 {
+    width: 100%;
+    height: 100%;
+    background: url('../img/page-1-bg.jpg') no-repeat center;
+    background-size: auto 100%;
+}
+
+#page-1 .page-arrow{
+    bottom: 6%;
+}
+
+.logo{
+    z-index: 5;
+    background: url('../img/logo.png') no-repeat center;
+    background-size: auto 100%;
+    position: absolute;
+    width: 102px;
+    height: 35px;
+    top: 5.1%;
+    right: 0;
+}
+
+.drive-btn{
+    z-index: 50;
+    background: url('../img/appointment.png') no-repeat center;
+    background-size: auto 100%;
+    position: absolute;
+    width: 52.5px;
+    height: 81.5px;
+    top: 80.15%;
+    right: 0;
+}
+
+#page-2 .page-2-swiper{
+    height: 100%;
+    width: 100%;
+}
+
+#page-2-1{
+    background: url(../img/page-2-slide1.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+#page-2-2{
+    background: url(../img/page-2-slide2.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+#page-2-3{
+    background: url(../img/page-2-slide3.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+#page-2-4{
+    background: url(../img/page-2-slide4.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+#page-2-5{
+    background: url(../img/page-2-slide5.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+.swiper-button-prev{
+    background: url('../img/arrow-left.png') no-repeat center;
+    top: 44.4%;
+    left: 14px;
+    width: 4.04%;
+    height: 5.55%;
+    background-size: 100% 100%;
+}
+
+.swiper-button-next{
+    background: url('../img/arrow-right.png') no-repeat center;
+    top: 44.4%;
+    right: 17px;
+    width: 4.04%;
+    height: 5.55%;
+    background-size: 100% 100%;
+}
+
+#page-3{
+    width: 100%;
+    height: 100%;
+    background: url('../img/page-3-bg.jpg') no-repeat center;
+    background-size: auto 100%;
+}
+
+.page-3-wrap{
+    position: relative;
+    margin: 0 auto;
+}
+
+.name{
+    height: 4.3%;
+    width: 56%;
+    top: 57.2%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: transparent;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.telephone{
+    height: 4.3%;
+    width: 56%;
+    top: 63.4%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: transparent;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.province{
+    color: #cdcdcd;
+    border:none;
+    height: 4.3%;
+    width: 56%;
+    top: 69.6%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: transparent;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.city{
+    color: #cdcdcd;
+    border:none;
+    height: 4.3%;
+    width: 56%;
+    top: 75.8%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: transparent;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.submit{
+    position: absolute;
+    width: 55%;
+    height: 5.2%;
+    top: 83.7%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.page-3-share-pop{
+    z-index: 11;
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/page-3-share-pop.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+.pop-mask{
+    display: none;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+}
+
+.share-arrow{
+    width: 86.5px;
+    height: 71.5px;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
+.close{
+    position: absolute;
+    width: 4%;
+    height: 2.8%;
+    top: 37.2%;
+    left: 84%;
+}
+
+.share{
+    position: absolute;
+    height: 5.2%;
+    width: 55%;
+    top: 59%;
+    left: 23%;
+}
+
+.black{
+    color: #000000;
+}
+
+#page-3 .page-arrow{
+    bottom: 4%;
+}
+
+.page-arrow {
+    z-index: 10;
+    width: 5.4%;
+    height: 4%;
+    left: 50%;
+    margin-left: -2.7%;
+    background: url(../img/arrow.png) no-repeat center;
+    background-size: auto 100%;
+    position: absolute;
+    bottom: 8%;
+    animation: arrow 1s infinite linear alternate;
+    -webkit-animation: arrow 1s infinite linear alternate;
+}
+
+
+
+.video{
+    width: 100%;
+    position: absolute;
+    top: 32%;
+    left: 0;
+}
+
+.see-more{
+    z-index: 50;
+    background: url('../img/see-more.png') no-repeat center;
+    background-size: auto 100%;
+    position: absolute;
+    width: 37.6%;
+    height: 30px;
+    top: 80.15%;
+    left: 31.2%;
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 40%, 0);
+        -webkit-transform: translate3d(0, 40%, 0);
+    }
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    z-index: 10;
+    color: #cdcdcd;
+}

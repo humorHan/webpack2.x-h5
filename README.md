@@ -1,2 +1,2 @@
-# webpack2.x-h5
-平日h5小项目开发模板  
+# webpack2.x
+webpack2.x 配置 
