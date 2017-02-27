@@ -10,18 +10,6 @@ var del = require('del');
 var vinylPaths = require('vinyl-paths');
 var tiny = require('gulp-tinypng');
 
-//压缩img
-gulp.task('tinyPng', ['del-img'], function () {
-    gulp.src(path.join(__dirname, '/src/img/**/*.{png,jpg}'))
-        .pipe(tiny('ESUKcbJt9lRkplqmVQLZ9Ot5uAeY2f95'))
-        .pipe(gulp.dest(path.join(__dirname, '/dist/img/')));
-});
-
-gulp.task('del-img', function(){
-    return gulp.src(path.join(__dirname, '/dist/img'), {read: false})
-        .pipe(vinylPaths(del));
-});
-
 //开发
 gulp.task('bundle', ['publish-static-js-dev'], function (done) {
     webpack(webpackConfig(true, true), function (err, stats) {

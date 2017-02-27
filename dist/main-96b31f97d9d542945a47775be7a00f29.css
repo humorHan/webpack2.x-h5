@@ -3450,7 +3450,7 @@ audio:not([controls]) {
 #page-1 {
   width: 100%;
   height: 100%;
-  background: url(img/page-1-bg-63a72fe8.jpg) no-repeat center;
+  background: url(img/page-1-bg.jpg?v=63a72fe8) no-repeat center;
   background-size: auto 100%; }
 
 #page-1 .page-arrow {
@@ -3458,7 +3458,7 @@ audio:not([controls]) {
 
 .logo {
   z-index: 5;
-  background: url(img/logo-53dd6b3f.png) no-repeat center;
+  background: url(img/logo.png?v=53dd6b3f) no-repeat center;
   background-size: auto 100%;
   position: absolute;
   width: 102px;
@@ -3468,7 +3468,7 @@ audio:not([controls]) {
 
 .drive-btn {
   z-index: 50;
-  background: url(img/appointment-46d6a0b8.png) no-repeat center;
+  background: url(img/appointment.png?v=46d6a0b8) no-repeat center;
   background-size: auto 100%;
   position: absolute;
   width: 52.5px;
@@ -3481,27 +3481,27 @@ audio:not([controls]) {
   width: 100%; }
 
 #page-2-1 {
-  background: url(img/page-2-slide1-852069c3.png) no-repeat center;
+  background: url(img/page-2-slide1.png?v=852069c3) no-repeat center;
   background-size: auto 100%; }
 
 #page-2-2 {
-  background: url(img/page-2-slide2-8a882f6b.png) no-repeat center;
+  background: url(img/page-2-slide2.png?v=8a882f6b) no-repeat center;
   background-size: auto 100%; }
 
 #page-2-3 {
-  background: url(img/page-2-slide3-78938173.png) no-repeat center;
+  background: url(img/page-2-slide3.png?v=78938173) no-repeat center;
   background-size: auto 100%; }
 
 #page-2-4 {
-  background: url(img/page-2-slide4-ffe6e45d.png) no-repeat center;
+  background: url(img/page-2-slide4.png?v=ffe6e45d) no-repeat center;
   background-size: auto 100%; }
 
 #page-2-5 {
-  background: url(img/page-2-slide5-72381e64.png) no-repeat center;
+  background: url(img/page-2-slide5.png?v=72381e64) no-repeat center;
   background-size: auto 100%; }
 
 .swiper-button-prev {
-  background: url(img/arrow-left-a51ba83c.png) no-repeat center;
+  background: url(img/arrow-left.png?v=a51ba83c) no-repeat center;
   top: 44.4%;
   left: 14px;
   width: 4.04%;
@@ -3509,7 +3509,7 @@ audio:not([controls]) {
   background-size: 100% 100%; }
 
 .swiper-button-next {
-  background: url(img/arrow-right-ff75ad09.png) no-repeat center;
+  background: url(img/arrow-right.png?v=ff75ad09) no-repeat center;
   top: 44.4%;
   right: 17px;
   width: 4.04%;
@@ -3519,7 +3519,7 @@ audio:not([controls]) {
 #page-3 {
   width: 100%;
   height: 100%;
-  background: url(img/page-3-bg-d81eabbc.jpg) no-repeat center;
+  background: url(img/page-3-bg.jpg?v=d81eabbc) no-repeat center;
   background-size: auto 100%; }
 
 .page-3-wrap {
@@ -3590,7 +3590,7 @@ audio:not([controls]) {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(img/page-3-share-pop-4de98fff.png) no-repeat center;
+  background: url(img/page-3-share-pop.png?v=4de98fff) no-repeat center;
   background-size: auto 100%; }
 
 .pop-mask {
@@ -3635,7 +3635,7 @@ audio:not([controls]) {
   height: 4%;
   left: 50%;
   margin-left: -2.7%;
-  background: url(img/arrow-f0a5aeab.png) no-repeat center;
+  background: url(img/arrow.png?v=f0a5aeab) no-repeat center;
   background-size: auto 100%;
   position: absolute;
   bottom: 8%;
@@ -3650,7 +3650,7 @@ audio:not([controls]) {
 
 .see-more {
   z-index: 50;
-  background: url(img/see-more-b84df4ff.png) no-repeat center;
+  background: url(img/see-more.png?v=b84df4ff) no-repeat center;
   background-size: auto 100%;
   position: absolute;
   width: 37.6%;

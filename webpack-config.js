@@ -98,7 +98,7 @@ module.exports = function (isWatch, isDev) {
                 }, {
                     test: /\.(png|jpeg|jpg|gif)$/,
                     //loader: 'url?limit=8192&name=img/[hash:8]-[name].[ext]'
-                    loader: isDev ? 'url-loader?limit=100&name=img/[name].[ext]' : 'url-loader?limit=100&name=img/[name]-[hash:8].[ext]'
+                    loader: isDev ? 'url-loader?limit=100&name=img/[name].[ext]' : 'url-loader?limit=100&name=img/[name].[ext]?v=[hash:8]'
                 }, {
                     test: /^es5-sham\.min\.js|es5-shim\.min\.js$/,
                     loader: 'babel-loader',

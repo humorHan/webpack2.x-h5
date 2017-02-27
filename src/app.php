@@ -134,14 +134,13 @@ function is_https()
                 <div class="share"></div>
             </div>
             <div class="pop-mask">
-                <img class="share-arrow" src="img/page-3/share-arrow.png">
+                <img class="share-arrow" src="img/share-arrow.png">
             </div>
         </section>
         <section class="swiper-slide" id="page-4">
             <div class="logo"></div>
             <div class="drive-btn"></div>
             <div class="see-more"></div>
-           /* <video class="video" poster="" src="video/video1.mp4?v=1"></video>*/
         </section>
     </div>
 </section>

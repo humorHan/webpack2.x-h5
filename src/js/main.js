@@ -105,9 +105,9 @@ var main = {
     },
     hasPlay: function () {
         if (util.isAndroid()) {
-            $(".video").attr("poster", "video/poster.png");
+            //$(".video").attr("poster", "video/poster.png");
         } else {
-            $(".video").attr("poster", "video/poster-ios.png");
+            //$(".video").attr("poster", "video/poster-ios.png");
         }
     },
     submit: function () {

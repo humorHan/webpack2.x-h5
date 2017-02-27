@@ -76,7 +76,7 @@ function is_https()
     <meta name="x5-fullscreen" content="true">
     <link rel="shortcut icon" type="image/x-icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
     <title>荣威i6让生活充满i</title>
-<link href="main-9f65a334ee67cc99fdc1ffeee77024ec.css" rel="stylesheet"></head>
+<link href="main-96b31f97d9d542945a47775be7a00f29.css" rel="stylesheet"></head>
 <body>
 <!--一点资讯分享-->
 <div id="yidian_share_title" class="yidianShare" style="display:none;">荣威i6让生活充满i</div>
@@ -134,14 +134,13 @@ function is_https()
                 <div class="share"></div>
             </div>
             <div class="pop-mask">
-                <img class="share-arrow" src="img/page-3/share-arrow.png">
+                <img class="share-arrow" src="img/share-arrow.png">
             </div>
         </section>
         <section class="swiper-slide" id="page-4">
             <div class="logo"></div>
             <div class="drive-btn"></div>
             <div class="see-more"></div>
-           /* <video class="video" poster="" src="video/video1.mp4?v=1"></video>*/
         </section>
     </div>
 </section>
@@ -241,5 +240,5 @@ function is_https()
     sharePerson();
 </script>
 
-<script type="text/javascript" src="js/main-1ea62a72b74ddea9b243.js"></script></body>
+<script type="text/javascript" src="js/main-87be0bbc28d6de434cb3.js"></script></body>
 </html>
