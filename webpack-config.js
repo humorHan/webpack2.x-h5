@@ -4,6 +4,7 @@
 var path = require('path');
 var glob = require('glob');
 var webpack = require('webpack');
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer');
@@ -126,7 +127,17 @@ module.exports = function (isWatch, isDev) {
                         mangle: {
                             except: ['$', 'exports', 'require']
                         }
-                    }), cssExtractTextPlugin);
+                    }),
+                    cssExtractTextPlugin
+                    //正式环境下压缩css(用gulp也OK) 注： 开发环境不可以压缩--会影响sourceMap文件
+                    /*,
+                    new OptimizeCssAssetsPlugin({
+                        assetNameRegExp: /\.css$/g,
+                        cssProcessor: require('cssnano'),
+                        cssProcessorOptions: { discardComments: {removeAll: true } },
+                        canPrint: true
+                    })*/
+                );
             }
             return pluginsArr.concat(htmlPlugin);
         })(),
