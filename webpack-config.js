@@ -92,8 +92,8 @@ module.exports = function (isWatch, isDev) {
                 }, {
                     test: /\.tpl$/,
                     include: [
-                        path.join(__dirname, 'tpl'),
-                        path.join(__dirname, 'dep/components')
+                        path.join(__dirname, 'src', 'tpl'),
+                        path.join(__dirname, 'src', 'dep', 'components')
                     ],
                     loader: 'tmodjs-loader'
                 }, {
