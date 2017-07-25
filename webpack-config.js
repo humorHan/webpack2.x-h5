@@ -4,7 +4,6 @@
 var path = require('path');
 var glob = require('glob');
 var webpack = require('webpack');
-var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer');
@@ -92,18 +91,38 @@ module.exports = function (isWatch, isDev) {
                 }, {
                     test: /\.tpl$/,
                     include: [
-                        path.join(__dirname, 'src', 'tpl'),
-                        path.join(__dirname, 'src', 'dep', 'components')
+                        path.join(__dirname, 'tpl'),
+                        path.join(__dirname, 'dep/components')
                     ],
                     loader: 'tmodjs-loader'
                 }, {
                     test: /\.(png|jpeg|jpg|gif)$/,
                     //loader: 'url?limit=8192&name=img/[hash:8]-[name].[ext]'
                     loader: isDev ? 'url-loader?limit=100&name=img/[name].[ext]' : 'url-loader?limit=100&name=img/[name].[ext]?v=[hash:8]'
-                }, {
-                    test: /^es5-sham\.min\.js|es5-shim\.min\.js$/,
-                    loader: 'babel-loader',
-                    exclude: node_modules
+                },{
+                    test: /\.js$/,
+                    exclude: /node_modules/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['env'],
+                            plugins: ['transform-runtime']
+                        }
+                    }
+                },{
+                    test: /\.js$/,
+                    exclude: /node_modules/,
+                    include: [
+                        path.join(__dirname, 'js'),
+                        path.join(__dirname, 'dep')
+                    ],
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: ['env'],
+                            plugins: ['transform-runtime']
+                        }
+                    }
                 }, {
                     test: /\.(html|php)$/,
                     include: [
@@ -120,24 +139,14 @@ module.exports = function (isWatch, isDev) {
                 pluginsArr.push(cssExtractTextPlugin);
             } else {
                 pluginsArr.push(
-                    new webpack.optimize.UglifyJsPlugin({
+                    /*new webpack.optimize.UglifyJsPlugin({
                         output: {
                             comments: false
                         },
                         mangle: {
                             except: ['$', 'exports', 'require']
                         }
-                    }),
-                    cssExtractTextPlugin
-                    //正式环境下压缩css(用gulp也OK) 注： 开发环境不可以压缩--会影响sourceMap文件
-                    /*,
-                    new OptimizeCssAssetsPlugin({
-                        assetNameRegExp: /\.css$/g,
-                        cssProcessor: require('cssnano'),
-                        cssProcessorOptions: { discardComments: {removeAll: true } },
-                        canPrint: true
-                    })*/
-                );
+                    }),*/ cssExtractTextPlugin);
             }
             return pluginsArr.concat(htmlPlugin);
         })(),

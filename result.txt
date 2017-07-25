@@ -1,0 +1,5 @@
+'img/appointment.png',
+'img/arrow-left.png',
+'img/arrow-right.png',
+'img/arrow.png',
+'img/logo.png',
